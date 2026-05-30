@@ -1,4 +1,4 @@
-import { Search, SlidersHorizontal } from "lucide-react";
+import { Search, SlidersHorizontal, X } from "lucide-react";
 
 export default function TopBar({ filters, setFilters, options }) {
   const update = (key, value) => setFilters((current) => ({ ...current, [key]: value }));
@@ -65,11 +65,21 @@ export default function TopBar({ filters, setFilters, options }) {
             <span className="sr-only">Search</span>
             <Search className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-secondary" size={16} />
             <input
-              className="control w-full pl-9 pr-3 text-sm"
+              className="control w-full pl-9 pr-10 text-sm"
               placeholder="Search biomarkers"
               value={filters.search}
               onChange={(event) => update("search", event.target.value)}
             />
+            {filters.search ? (
+              <button
+                aria-label="Clear search"
+                className="absolute right-2 top-1/2 grid h-7 w-7 -translate-y-1/2 place-items-center rounded-md text-secondary transition hover:bg-white/10 hover:text-primary"
+                onClick={() => update("search", "")}
+                type="button"
+              >
+                <X size={15} />
+              </button>
+            ) : null}
           </label>
         </div>
       </div>

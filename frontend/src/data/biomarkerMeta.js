@@ -177,13 +177,6 @@ export const biomarkerMeta = {
     unit: "pg/mL",
     description: "Free testosterone.",
   },
-  SHBG: {
-    displayName: "SHBG",
-    category: "Hormones",
-    subcategory: "Binding Proteins",
-    unit: "nmol/L",
-    description: "Sex hormone-binding globulin.",
-  },
   "hs-CRP": {
     displayName: "hs-CRP",
     category: "Inflammatory",

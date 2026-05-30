@@ -18,7 +18,7 @@ const compareMap = {
   LDL: ["LDL", "LDL-P"],
   "LDL-P": ["LDL-P", "Small LDL-P", "LP-IR Score"],
   "Fasting Insulin": ["Fasting Insulin", "HOMA-IR", "LP-IR Score"],
-  "Testosterone Total": ["Testosterone Total", "Testosterone Free", "SHBG"],
+  "Testosterone Total": ["Testosterone Total", "Testosterone Free"],
 };
 
 function makeChartRows(labs, selected, overlay) {

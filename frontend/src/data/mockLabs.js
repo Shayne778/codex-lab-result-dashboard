@@ -31,7 +31,6 @@ const series = {
   Neutrophils: { values: [55, 58, 61, 57, 54, 56, 59], range: [40, 75], panel: "Complete Blood Count" },
   "Testosterone Total": { values: [522, 548, 610, 585, 642, 598, 568], range: [264, 916], panel: "Hormone Panel" },
   "Testosterone Free": { values: [12.4, 13.1, 14.7, 13.8, 15.3, 14.0, 13.5], range: [8.7, 25.1], panel: "Hormone Panel" },
-  SHBG: { values: [38, 41, 36, 39, 34, 37, 40], range: [16.5, 55.9], panel: "Hormone Panel" },
   "hs-CRP": { values: [1.1, 1.8, 3.2, 2.0, 0.8, 1.0, 2.4], range: [0, 3], panel: "Inflammatory Markers" },
   ESR: { values: [6, 8, 14, 10, 5, 7, 12], range: [0, 15], panel: "Inflammatory Markers" },
   "Urine pH": { values: [6.0, 6.5, 5.5, 6.0, 6.5, 7.0, 6.0], range: [5.0, 8.0], panel: "Urinalysis" },
