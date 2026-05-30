@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Syne:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-base: #171c23;
+  --bg-surface: #232a34;
+  --bg-elevated: #303946;
+  --bg-border: #485565;
+  --text-primary: #f1f5f9;
+  --text-secondary: #a6b4c5;
+  --text-muted: #6b7a8d;
+  --status-normal: #5df6ba;
+  --status-borderline: #f5a623;
+  --status-high: #ff4d6d;
+  --status-low: #6c8ebf;
+  --accent-primary: #3d8ef8;
+  --accent-glow: rgba(61, 142, 248, 0.15);
+  --provider-quest: #e85d4a;
+  --provider-labcorp: #4a7fe8;
+  --provider-leehealth: #48c78e;
+  --provider-other: #9b6ef3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--bg-base);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text-primary);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(61, 142, 248, 0.07), transparent 30rem),
+    linear-gradient(180deg, #202732 0%, var(--bg-base) 34rem);
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22334f;
+  border: 2px solid var(--bg-base);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.numeric {
+  font-family: "DM Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.panel {
+  border: 1px solid rgba(189, 202, 218, 0.24);
+  background: linear-gradient(180deg, rgba(48, 57, 70, 0.94), rgba(35, 42, 52, 0.97));
+  border-radius: 8px;
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.18);
+}
+
+.control {
+  height: 40px;
+  border: 1px solid rgba(189, 202, 218, 0.28);
+  border-radius: 8px;
+  background: rgba(35, 42, 52, 0.94);
+  color: var(--text-primary);
+  outline: none;
+}
+
+.control:focus {
+  border-color: rgba(61, 142, 248, 0.8);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}

@@ -1,0 +1,16 @@
+node_modules/
+scripts/node_modules/
+__pycache__/
+*.pyc
+dist/
+.env
+.env.*
+*.log
+.tmp-extract/
+labs/
+outputs/
+frontend/public/private/
+frontend/src/data/liveLabs.json
+frontend/node_modules/
+frontend/dist/
+frontend/*.log
