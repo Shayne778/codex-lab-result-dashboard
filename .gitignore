@@ -7,6 +7,7 @@ dist/
 .env.*
 *.log
 .tmp-extract/
+.pages-deploy/
 labs/
 outputs/
 frontend/public/private/
